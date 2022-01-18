@@ -267,13 +267,10 @@ body{
     justify-content: center;
 }
 
-.galery-list{
-    align-items: center;
-}
 
 .galery-li {
     display: inline-block;
-    margin-left:60px;  
+      
 }
 
 .covered-main{
