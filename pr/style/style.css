@@ -181,7 +181,7 @@ body{
 .conteiner-visitors{
     background: #00A1C6;
     display: flex;
-    text-align: center;
+    justify-content: center;
     padding-top: 108px;
 }
 
@@ -197,16 +197,14 @@ body{
     font-size: 56px;
     line-height: 56px;
     margin: 30px auto;
-    
+    max-width: 555px;
+    text-align: center;
 }
 
 .just3{
     margin: 30px auto;
     font-size: 24px;
     line-height: 34px;
-}
-
-.just2 .just3{
     max-width: 555px;
     text-align: center;
 }
