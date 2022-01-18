@@ -155,7 +155,7 @@ body{
 
 .conteiner-text{
     background: #F4F5F7;
-    padding: 130px;
+    padding: 130px 0;
 }
 
 .conteiner-itemt{
@@ -181,7 +181,7 @@ body{
 .conteiner-visitors{
     background: #00A1C6;
     display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 108px;
 }
 
@@ -196,24 +196,24 @@ body{
     font-weight: bold;
     font-size: 56px;
     line-height: 56px;
-    text-align: center;
-    margin: 30px 350px;
+    margin: 30px auto;
     
 }
 
 .just3{
-    text-align: center;
-    padding: 34px 360px;
+    margin: 30px auto;
     font-size: 24px;
     line-height: 34px;
 }
 
-.just2, .just3{
+.just2 .just3{
     max-width: 555px;
+    text-align: center;
 }
 
 .button-start{
     text-align: center;
+    padding: 60px 0;
 }
 
 .button1{
@@ -236,17 +236,22 @@ body{
     border: none;
 }
 
+.galery-base{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
 
 .box{
-    background: #ffffff;
     width: 262px;
-    height:300px ;
+    height: 300px;
     margin: 30px;
-    display: inline-block;
+    background: #ffffff;
 }
 
 .box:hover{
-    background:#3141C5;
+    background: #3141C5;
     transition: 200ms;
 }
 
@@ -361,9 +366,7 @@ body{
     }
     
     .galery-base{
-        width: 900px;
-        justify-content: space-evenly;
-        text-align: center;
+        justify-items: center;
     }
 }
 
@@ -455,10 +458,6 @@ body{
         grid-area: seven;
         display: none;
     }
-
-    .galery-base{
-        padding-left: 70px;
-    }
 }
 
 @media (max-width: 800px){
@@ -478,9 +477,6 @@ body{
         max-width:100% ;
     }
 }
-
-
-
 
 
 @media (max-width: 550px){
@@ -585,4 +581,34 @@ body{
         display: none;
     }
 
+}
+
+@media (max-width: 480px){
+    .conteiner{
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 360px){
+    .conteiner{
+        max-width: 270px;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven";
+    }
+}
+
+@media (max-width: 320px){
+    .conteiner{
+        max-width: 250px;
+    }
 }
