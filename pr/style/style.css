@@ -89,6 +89,45 @@ body{
     transition: 1s;
 }
 
+.header-wrapper{
+    display: flex;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.header-wrapper > div:first-of-type{
+    max-width: 750px;
+    z-index: 1;
+}
+
+.header-wrapper > div:last-of-type{
+    position: absolute;
+    top: 0;
+    right: -70px;
+    z-index: 0;
+}
+
+
+.title{
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.header-text{
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 450px;
+    margin-bottom: 60px;
+}
+
+.button-white{
+    background: white;
+    color: rgba(48, 64, 196, 1);
+}
+
 .team{
     background: #FCF0E3;
     display: flex;
@@ -98,6 +137,10 @@ body{
 
 .team-img{
     padding: 138px 0;
+}
+
+.team-img:hover{
+    transform: skew(30deg);
 }
 
 .ingbox-text_mini{
@@ -200,6 +243,15 @@ body{
     line-height: 34px;
     max-width: 461px;
     margin-bottom: 40px;
+}
+
+.busy-img{
+    animation-name: busy-img_box;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
 }
 
 .info{
@@ -581,6 +633,15 @@ body{
     display: none;
 }
 
+@keyframes busy-img_box{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 80px;
+    }
+}
+
 @keyframes img{
     0%{
         top: 0;
@@ -606,7 +667,6 @@ body{
 
     .header{
         padding: 15px 0;
-        display: none;
     }
 
     .busy{
@@ -619,6 +679,21 @@ body{
     
     .galery-base{
         justify-items: center;
+    }
+
+    .header-wrapper{
+        display: block;
+        position: static;
+        padding-bottom: 0;
+    }
+
+    .header-wrapper > div:last-of-type{
+        position: static;
+        margin-top: 40px;
+    }
+
+    .header-wrapper > div:last-of-type img{
+        width: 100%;
     }
 }
 
