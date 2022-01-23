@@ -251,7 +251,10 @@ body{
     position: relative;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
 
+.busy-img:hover{
+    transform: scale(1.2);
 }
 
 .info{
