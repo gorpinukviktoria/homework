@@ -49,6 +49,20 @@ body{
     align-items: center;
 }
 
+.check{
+    width: 30px;
+    height: 2px;
+    background: #000000;
+}
+
+.check:not(:last-of-type){
+    margin-bottom: 3px;
+}
+
+.checkbox, .check-wrapper{
+    display: none;
+}
+
 .header-li{
     display: inline-block;
 }
@@ -704,6 +718,29 @@ body{
 @media (max-width: 1090px){
     .container{
         max-width: 750px;
+    }
+
+    .checkbox, .check-wrapper{
+        display: block;
+    }
+
+    .header-all{
+        display: none;
+    }
+
+    .header-nav{
+        position: relative;
+    }
+
+    .checkbox{
+        position: absolute;
+        z-index: 1;
+        display: block;
+        opacity: 0;
+    }
+
+    .check-wrapper:checked ~ .header-all{
+        display: block;
     }
 
     .conteiner-itemt{

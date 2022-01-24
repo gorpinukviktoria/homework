@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,600&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./wow/animate.css">
+    <link rel="stylesheet" href="./wow js/animate.css">
 </head>
 <body>
     <header class="header">
@@ -28,25 +28,33 @@
                     </p>
                 </div>
             </div>
-            <nav class="header-nav">
-                <ul>
-                    <li class="header-li">
+            <div class="header-nav">
+                <input class="checkbox" checked type="checkbox">
+                <div class="check-wrapper">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
+                </div>
+                <div class="header-all">
+                    <ul>
+                        <li class="header-li">
                         <a href="">
                             Home              
-                     </a>
-                    </li>
+                        </a>
+                        </li>
                     <li class="header-li">
                         <a href="">
                             Stories  
                         </a>
                     </li>
-                </ul>
+                    </ul>
                 <div>
                     <button class="button">
                         Get Started
                     </button>
                 </div>
-            </nav>
+            </div>
+        </div>
         </div>
     </header>
     <section class="header">
@@ -119,7 +127,7 @@ Startups, small companies and teams, entrepreneurs and web developers.
             <img class="team-img" src="./img/team/circle.png" alt="">
         </div>
         <div class="container ingbox-text">
-            <p class="ingbox-text_mini">
+            <p class="ingbox-text_mini wow tada">
                 Team Inbox
             </p>
             <h1 class="ingbox_text_h1">
@@ -383,5 +391,12 @@ Startups, small companies and teams, entrepreneurs and web developers.
             </div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <script src="./script/script.js"></script>
+  <script src="./wow js/wow.min.js"></script>
+             <script>
+             new WOW().init();
+  </script>
 </body>
 </html>
