@@ -49,6 +49,19 @@ body{
     align-items: center;
 }
 
+.check-wrapper{
+    z-index: 2;
+}
+
+.checkbox{
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
 .check{
     width: 30px;
     height: 2px;
@@ -722,6 +735,7 @@ body{
 
     .checkbox, .check-wrapper{
         display: block;
+        z-index: 2;
     }
 
     .header-all{
@@ -734,14 +748,22 @@ body{
 
     .checkbox{
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         display: block;
         opacity: 0;
     }
 
-    .check-wrapper:checked ~ .header-all{
+    .checkbox:checked ~ .header-all{
         display: block;
+        position: fixed;
+        background: beige;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
+
+
 
     .conteiner-itemt{
         flex-direction: column;
