@@ -1,0 +1,91 @@
+
+.ckeckbox{
+    display: none;
+}
+
+.fake{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background: bisque;
+    position: relative;
+}
+
+.fake::before{
+    content: '';
+    opacity: 0;
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+/* .fake::before{
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, -50%) rotate(45deg);
+    transition: 1s;
+} */
+
+/* .fake::after{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    width: 2px;
+    height: 7px;
+    background-color: black;
+    left: 69%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 1s;
+} */
+
+.ckeckbox:checked + .fake::before, .ckeckbox:checked + .fake::after{
+    opacity: 1;
+}
+
+.radio{
+    display: none;
+}
+
+.fake-radio{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: bisque;
+    position: relative;
+}
+
+.fake-radio::before{
+    content: '';
+    opacity: 0;
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+.radio:checked + .fake-radio::before{
+    opacity: 1;
+}
