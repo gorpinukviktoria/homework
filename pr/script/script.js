@@ -4,3 +4,8 @@ $('.about-items > div').on('click', function(){
     $(this).toggleClass('toggleColor');
     $(this).next('p').slideToggle(300).toggleClass('toggleColor');
 })
+
+$('.features-items > div').on ('click', function(){
+    $(this).toggleClass('toggleColor-ic');
+    $(this).next('p').slideToggle(300)
+})
