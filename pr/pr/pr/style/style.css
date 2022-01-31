@@ -153,9 +153,6 @@ body{
 
 .team{
     background: #FCF0E3;
-}
-
-.teammg{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -232,19 +229,11 @@ body{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #0185D0; ;
     background-blend-mode: overlay;
     height: 4px;
-    top: 50;
 }
+
 
 .features-text{
-    
-}
-
-.features_text{ 
     width: 460px;
-}
-
-.features_text > div {
-    cursor: pointer;
 }
 
 .green-p{
@@ -252,10 +241,12 @@ body{
     line-height: 34px;
     font-weight: bold;
     color: #009B4D;
-    padding: 20px 0;
+    padding: 24px 0;
 }
 
-.features-space{
+
+.features-container{
+    display: flex;
     position: relative;
     padding-bottom: 100px;
 }
@@ -273,10 +264,11 @@ body{
 }
 
 .features-icon_first{
-    position: absolute;
+    position: relative;
     top: 300px;
     left: 0;
 }
+
 
 .features-h1{
     font-size: 56px;
@@ -300,15 +292,15 @@ body{
     margin-bottom: 15px;
     display: none;
 }
- 
+
+.features-icon {
+    margin-right: 20px;
+}
+   
 .features-flex{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.about-features{
-    font-weight: bold;
 }
 
 .features-hr{
@@ -323,15 +315,13 @@ body{
     font-weight: bold;
 }
 
+
 p {
     margin-bottom: 15px;
 }
 
 .img-last{
-    position: absolute;
-    right: 0;
     width: 580px;
-    bottom: 80px;
 }
 
 .busy{
@@ -542,62 +532,11 @@ p {
     padding: 40px;
 }
 
-
-.up{
-    padding: 50px 0;
-    position: relative;
-}
-
-.carusel-text{
-    max-width: 1440px;
-    margin: 100px auto;
-    text-align: center;
-}
-
-.p-blue{
-    font-size: 24px;
-    line-height: 30px;
-    
-    color: #3142C6;
-    font-weight: bold;
-}
-
-.p-second{
-    max-width: 750px;
-    font-size: 24px;
-    line-height: 34px;
-    align-items: center;
-}
-
-.p-name{
-    max-width: 225px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-}
-
-.p-three{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: lighter;
-}
-
-.img-carusel{
-    position: absolute;
-    right: 0;
-    top: 160px;
-    z-index: 2;
-}
-
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: #3142C6;
-}
-
 .about-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .about-were{
@@ -1135,17 +1074,11 @@ p {
         flex-direction: column;
         align-items: center;
     }
-    .teammg{
+
+    .team{
         flex-direction: column;
         text-align: center;
     }
-
-    .free-flex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
     .footer-info, .footer-info-logo{
         flex-direction: column;
     }
@@ -1181,18 +1114,8 @@ p {
     .footer-lists-adapt > div:last-child{
         text-align: end;
     }
+}
 
-    .features{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-last{
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
 
 @media (max-width: 550px){
     .container{
@@ -1230,9 +1153,8 @@ p {
         max-width: 100%;
     }
 
-    .container-up{
-        max-width: 480px;
-        margin: 0 auto;
+    .about-item__container{
+        width: 290px;
     }
 
     .galery-base{
@@ -1251,8 +1173,7 @@ p {
 
     .covered-text2{
         max-width: 250px;
-        text-align: center;
-        
+        text-align: center; 
     }
 
     .wrapper{
@@ -1338,9 +1259,34 @@ p {
         font-size: 55px;
     }
 
+.header-nav {
+    text-align: center;
+    }
+
     .ingbox-text{
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .button-about{
+        width: 290px;
+    }
+
+    .about-item__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-items{
+        width: 290px;
+        height: 140px;
+    }
+
+    .about-items > div{
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
