@@ -9,3 +9,7 @@ $('.features-items > div').on ('click', function(){
     $(this).toggleClass('toggleColor-ic');
     $(this).next('p').slideToggle(300)
 })
+
+$('.container-up').slick({ 
+    dots: true,
+})
