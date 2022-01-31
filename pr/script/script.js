@@ -7,6 +7,7 @@ $('.about-items > div').on('click', function(){
 
 $('.features-items > div').on ('click', function(){
     $(this).toggleClass('toggleColor-ic');
+    $(this).parent('.features-items').toggleClass('toggleBack');
     $(this).next('p').slideToggle(300)
 })
 
