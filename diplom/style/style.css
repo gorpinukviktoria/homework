@@ -264,7 +264,6 @@ input{
     text-align: center;
     position: relative;
     top: -13%;
-    z-index: 1;
 }
 
 .hr-icon::before{
@@ -286,5 +285,46 @@ input{
     background: white;
     top: 50%;
     left: 43%;
+    transform: rotate(-45deg);
+}
+
+.about-icon1{
+    display: flex;
+    justify-content: space-between;
+    width: 255px;
+    height: 70px;
+    background: #FF5722;
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+
+.icon-check{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hr-1::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: white;
+    top: 40%;
+    right: 10%;
+    transform: rotate(45deg);
+}
+
+.hr-1::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: white;
+    top: 50%;
+    right: 43%;
     transform: rotate(-45deg);
 }
