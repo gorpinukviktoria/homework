@@ -217,6 +217,7 @@ input{
 }
 
 
+
 .private{
     width: 350px;
     height: 418.93px;
@@ -258,6 +259,7 @@ input{
 }
 
 .about-icon{
+    display: flex;
     width: 72px;
     height: 70px;
     background: #FF5722;
@@ -290,7 +292,7 @@ input{
 
 .about-icon1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 255px;
     height: 70px;
     background: #FF5722;
@@ -299,11 +301,15 @@ input{
     top: 90px;
 }
 
+.about-icon1 > p{
+    margin: 20px auto;
+    
+}
+
 .icon-check{
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
     color: #FFFFFF;
 }
 
@@ -325,6 +331,6 @@ input{
     height: 2px;
     background: white;
     top: 50%;
-    right: 43%;
+    right: 10%;
     transform: rotate(-45deg);
 }
