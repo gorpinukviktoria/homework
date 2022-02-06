@@ -247,10 +247,9 @@ input{
 
 .img-p{
     font-size: 20px;
-    line-height: 24px;
     font-weight: bold;
     text-align: center;
-    padding: 25px 0;
+    padding: 25px ;
 }
 
 .our-img{
@@ -259,25 +258,33 @@ input{
 }
 
 .about-icon{
-    margin-bottom: 15px;
     width: 72px;
     height: 70px;
     background: #FF5722;
     text-align: center;
+    position: relative;
+    top: -13%;
+    z-index: 1;
 }
 
-.hr-icon1{
-    width: 15px;
-    height: 1px;
+.hr-icon::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
     background: white;
+    top: 40%;
+    left: 30px;
     transform: rotate(45deg);
-   
-    
 }
 
-.hr-icon2{
-    width: 15px;
-    height: 1px;
+.hr-icon::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
     background: white;
-    transform: rotate(-45deg) translate(0, -3px);
+    top: 50%;
+    left: 43%;
+    transform: rotate(-45deg);
 }
